@@ -212,3 +212,4 @@ C:\Users\first_line2\InstructiionsApp\obj\Debug\net10.0\InstructiionsApp.pdb
 C:\Users\first_line2\InstructiionsApp\obj\Debug\net10.0\InstructiionsApp.genruntimeconfig.cache
 C:\Users\first_line2\InstructiionsApp\obj\Debug\net10.0\ref\InstructiionsApp.dll
 C:\Users\first_line2\InstructiionsApp\obj\Debug\net10.0\compressed\6lte7b8460-{0}-tii2jv8qnw-tii2jv8qnw.gz
+C:\Users\first_line2\InstructiionsApp\obj\Debug\net10.0\InstructiionsApp.sourcelink.json

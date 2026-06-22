@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "Grass DB",
+            "database": "${workspaceFolder:InstructiionsApp}/C:\\Users\\first_line2\\InstructiionsApp"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

@@ -13,6 +13,9 @@
         </p>
         
         <h4 class="text-primary border-bottom pb-2">Текст инструкции:</h4>
+<div class="bg-light p-4 border rounded shadow-sm">
+    @Html.Raw(Model.Content)
+</div>
         <div class="bg-light p-3 border rounded mb-4" style="white-space: pre-wrap;">@Model.Content</div>
         
         @if (Model.Attachments != null && Model.Attachments.Any())
@@ -42,6 +45,7 @@
         <div>
             <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Редактировать</a>
             <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Удалить</a>
+            <a asp-action="ExportToJson" asp-route-id="@Model.Id" class="btn btn-info text-white">Экспорт в JSON</a>
         </div>
     </div>
 </div>
