@@ -1,0 +1,44 @@
+@model InstructiionsApp.Models.Instruction
+@{ ViewData["Title"] = "Редактирование"; }
+
+<h2>Редактировать инструкцию</h2>
+<hr />
+<div class="row">
+    <div class="col-md-8">
+        <form asp-action="Edit">
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="CreatedAt" />
+
+            <div class="mb-3">
+                <label asp-for="Title" class="form-label font-weight-bold"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Category" class="form-label font-weight-bold"></label>
+                <select asp-for="Category" class="form-select">
+                    <option value="Принтеры">Принтеры</option>
+                    <option value="Сканеры">Сканеры</option>
+                    <option value="ТСД">ТСД</option>
+                    <option value="1С">1С</option>
+                    <option value="Windows">Windows</option>
+                    <option value="Сеть">Сеть</option>
+                    <option value="Офисные программы">Офисные программы</option>
+                </select>
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label font-weight-bold"></label>
+                <input asp-for="Description" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Content" class="form-label font-weight-bold"></label>
+                <textarea asp-for="Content" class="form-control" rows="8"></textarea>
+                <span asp-validation-for="Content" class="text-danger"></span>
+            </div>
+            
+            <button type="submit" class="btn btn-warning">Сохранить изменения</button>
+            <a asp-action="Index" class="btn btn-secondary">Отмена</a>
+        </form>
+    </div>
+</div>

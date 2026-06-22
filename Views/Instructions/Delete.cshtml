@@ -1,0 +1,15 @@
+@model InstructiionsApp.Models.Instruction
+@{ ViewData["Title"] = "Удаление инструкции"; }
+
+<div class="alert alert-danger mt-4 shadow-sm">
+    <h3 class="alert-heading">Вы уверены, что хотите удалить эту инструкцию?</h3>
+    <p>Это действие нельзя будет отменить.</p>
+    <hr>
+    <p class="mb-4"><strong>Название:</strong> @Model.Title <br/> <strong>Категория:</strong> @Model.Category</p>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Да, удалить навсегда</button>
+        <a asp-action="Index" class="btn btn-secondary">Отмена</a>
+    </form>
+</div>
